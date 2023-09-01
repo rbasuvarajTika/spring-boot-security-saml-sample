@@ -1,0 +1,27 @@
+server:
+    port: 9091
+    
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          saml: DEBUG
+      opensaml: DEBUG
+    com:
+      spring:
+        boot:
+          security:
+            saml: DEBUG
+
+service.provider.entity.id: com.saml.spring.boot.demo
+
+idp.metedata.url: https://login.microsoftonline.com/c41c767c-d5f6-4c2c-b27f-c3f7a06c7455/federationmetadata/2007-06/federationmetadata.xml?appid=2a65b464-98b4-47ca-ad86-6f364ba361be
+
+# you can update credentials if you want, I recommend you to keep as it is for demo purpose
+saml:
+  keystore.password: 123456
+  private.key:
+    alias: apollo
+    password: nalle123 
